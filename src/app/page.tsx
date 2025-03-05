@@ -3,13 +3,8 @@
 import { useEffect, useState } from "react";
 import {
   listenToQuests,
-  addQuest,
-  deleteQuest,
   listenToBagOfHolding,
-  addItemToBag,
-  deleteItemFromBag,
   listenToGold,
-  updateGold,
   Quest,
   Item,
   Gold,
@@ -35,7 +30,7 @@ export default function Tracker() {
     };
   }, []);
 
-  function compareStrings(a: any, b: any) {
+  function compareStrings(a: string, b: string) {
     // Assuming you want case-insensitive comparison
     a = a.toLowerCase();
     b = b.toLowerCase();
